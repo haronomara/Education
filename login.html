@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* styling the body*/ 
+        body{
+            background-color: rgb(163, 159, 159);
+            width: 100%;
+        }
+        /* styling the form for the login*/
+        form {
+            align-items: center;
+            padding:  200px;
+            justify-content: center;
+            
+        }
+        /*styling Email*/
+        input[type=Email]{
+            width: 20%;
+            border-radius: 5px;
+            border: 1px solid rgb(14, 13, 13);
+            padding: 8px;
+        }
+        /*styling password*/
+        input[type=Password]{
+            width: 20%;
+            border-radius: 5px;
+            align-items: center;
+            border: 1px solid rgb(44, 13, 13);
+            height: 5%;
+            padding: 8px;
+        }
+        /*styling Submit */
+        input[type=Submit]{
+            width: 10%;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(221, 8, 79);
+            border: 1px solid gray;
+            padding: 8px;
+            
+
+        }
+        /*stling the hover of the Submit Button*/
+        input[type=Submit]:hover {
+            background-color: rgb(172, 166, 168);
+            
+            
+        }
+        /*styling the Heading of the Form*/
+        form h1 {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+        <h1> Login lnformation</h1>
+        <br><br><label>Email</label><br>
+        <input type="Email" id="myEmail" placeholder="Enter your Email"><br><br>
+        <label>Password</label><br>
+        <input type="Password" id="Password" placeholder=""><br>
+        <br><input type="Submit" value="Login"><br>
+        <br><input type="checkbox">
+        <label> Remember Password</label>
+        <p>Forgot Password</p>
+    </form>
+    </center>
+    
+        <script>
+            // javascript code for login form
+            function myLogin(form){
+                if(form.Email.value == "Email"){
+                    if(form.Passsword .value=="Password"){
+                        location = "login.html"
+                    } else {
+                        alert("incorrect Email")
+
+                        
+                    }
+                } else {
+                    alert("incorrect Password")
+                }
+            }
+        </script>
+        
+    
+</body>
+</html>

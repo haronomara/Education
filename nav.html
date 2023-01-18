@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(88, 88, 107);
+            width: 100%;
+        }
+        /*styling Navigation bar*/
+        nav{
+            background-color: rgb(3, 3, 63);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding: 25px;
+        }
+        /* styling the Navigation unordered list*/
+        nav ul{
+            list-style: none;
+            
+        }nav ul li {
+            color: white;
+            text-decoration: none;
+            float: left;
+            padding: 10px;
+        }
+        nav ul li a{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+            font-style: italic;
+        }
+        nav h1 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-style: italic;
+        }
+        div{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            padding: 25px;
+
+        }
+        /* Styling the Paragraph inside the footer*/
+        div p{
+            color: white;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 3px
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>StudyHop</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="footer">
+        <p>About</p>
+        <p>Registration</p>
+        <p>Map</p>
+        <p>Login</p>
+        
+    </div>
+</body>
+</html>
